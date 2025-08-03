@@ -1,0 +1,26 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: TravelPlan_Project
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:sivadb
+    username: siva
+    password: siva
+  jpa:
+    show-sql: true
+
+plan:
+ module:
+  messages:   
+    save-success :  Travel Plan is Saved with Id
+    save-failure :  Travel Plan is not Saved
+    update-success : Travel Plan is Updated
+    update-failure : Travel Plan is not for Updation
+    delete-success : Travel Plan is Deleted
+    delete-failure : Travel Plan is not found for Deletion
+    plan-status-change-success : Travel Plan Status Changed
+    plan-status-change-failure : Travel Plan not found for Status Updation
+    find-by-id-failure : Not Found 
